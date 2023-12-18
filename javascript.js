@@ -1,28 +1,30 @@
 const container = document.querySelector('.container')
 const sliderDiv = document.querySelector('.slidecontainer')
 const selectColor = document.querySelector('#selectColor')
+const buttonSection = document.querySelector('.button-section')
+console.log(buttonSection);
 
 
 
 const buttonNew = document.createElement('button')
 buttonNew.textContent = 'New'
-sliderDiv.appendChild(buttonNew)
+buttonSection.appendChild(buttonNew)
 
 const buttonReset = document.createElement('button')
 buttonReset.textContent = 'Reset'
-sliderDiv.appendChild(buttonReset)
+buttonSection.appendChild(buttonReset)
 
 const buttonRgb = document.createElement('button')
 buttonRgb.textContent = 'RGB'
-sliderDiv.appendChild(buttonRgb)
+buttonSection.appendChild(buttonRgb)
 
 const buttonPen = document.createElement('button')
 buttonPen.textContent = 'Pen'
-sliderDiv.appendChild(buttonPen)
+buttonSection.appendChild(buttonPen)
 
 const buttonClear = document.createElement('button')
 buttonClear.textContent = 'Clear'
-sliderDiv.appendChild(buttonClear)
+buttonSection.appendChild(buttonClear)
 
 
 
@@ -137,6 +139,8 @@ buttonRgb.addEventListener("click", (event) =>{
 })
 
 
+///BUTTON TO SELECT A COLOR FORM THE PALLETTE
+
 buttonPen.addEventListener("click", (event) =>{    
 
     
@@ -154,6 +158,9 @@ buttonPen.addEventListener("click", (event) =>{
 
 })
 
+
+
+//////BUTTON TO ERASE A COLOR
 buttonClear.addEventListener("click", (event) =>{    
 
     

@@ -28,11 +28,13 @@ h1{
 }
 
 .mode-container{
+  padding: 20px 0px;
   display: flex;
 }
 
-.slidecontainer{
-  padding: 20px 0px;
+.slidecontainer p{
+ text-align: center;
+ 
 }
 
 .grid2 {
