@@ -1,4 +1,4 @@
-const container = document.querySelector('.container')
+const container = document.querySelector('.gridContainer')
 const sliderDiv = document.querySelector('.slidecontainer')
 const selectColor = document.querySelector('#selectColor')
 const buttonSection = document.querySelector('.button-section')
@@ -8,22 +8,27 @@ console.log(buttonSection);
 
 const buttonNew = document.createElement('button')
 buttonNew.textContent = 'New'
+buttonNew.classList.add("button-style")
 buttonSection.appendChild(buttonNew)
 
 const buttonReset = document.createElement('button')
 buttonReset.textContent = 'Reset'
+buttonReset.classList.add("button-style")
 buttonSection.appendChild(buttonReset)
 
 const buttonRgb = document.createElement('button')
 buttonRgb.textContent = 'RGB'
+buttonRgb.classList.add("button-style")
 buttonSection.appendChild(buttonRgb)
 
 const buttonPen = document.createElement('button')
 buttonPen.textContent = 'Pen'
+buttonPen.classList.add("button-style")
 buttonSection.appendChild(buttonPen)
 
 const buttonClear = document.createElement('button')
 buttonClear.textContent = 'Clear'
+buttonClear.classList.add("button-style")
 buttonSection.appendChild(buttonClear)
 
 

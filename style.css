@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -9,9 +10,16 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #212121;
+  background-color: #00efe2;
   min-height: 100vh;
   
+}
+
+.container{
+  display: flex;
+  gap: 60px;
+  align-items: center;
+
 }
 
 h1{
@@ -19,17 +27,23 @@ h1{
   font-size: 50px;
 }
 
-.container {
+.gridContainer {
   display: flex;
   height: 500px;
   width: 500px;
   background-color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
 
 .mode-container{
   padding: 20px 0px;
   display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-evenly;
 }
 
 .slidecontainer p{
@@ -37,10 +51,106 @@ h1{
  
 }
 
+.button-section{
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+.colorPicker{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+/*********STYLE BUTTONS*************/
+
+.button-style {
+  border: 4px solid #302f3a;
+  color: #302f3a;
+  position: relative;
+  margin: 10px 15px;
+  padding:10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-style::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -.6rem;
+  top: -.5rem;
+  z-index: -1;
+  background-color: #42fe8d;
+  transition: all 200ms ease-out;
+}
+
+.button-style:hover::before {
+  top: 0;
+  left: 0;
+}
+
+/********** COLOR INPUT STYLE ************/
+
+#selectColor{
+  width: 80px;
+  height: 80px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#selectColor::-webkit-color-swatch{
+  border-radius: 50%;
+  border: 4px #302f3a solid;
+
+}
+
+/************RANGE SLIDER STYLE***********/
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #42fe8d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/****************/
+
 .grid2 {
  
   width: 25px;
   height: 25px;
-  border: solid 1px;
-  flex: 1;
+  border: solid 0.5px grey;
 }
