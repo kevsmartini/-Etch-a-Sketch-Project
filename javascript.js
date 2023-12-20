@@ -17,17 +17,17 @@ buttonReset.classList.add("button-style")
 buttonSection.appendChild(buttonReset)
 
 const buttonRgb = document.createElement('button')
-buttonRgb.textContent = 'RGB'
+buttonRgb.textContent = 'Colorful'
 buttonRgb.classList.add("button-style")
 buttonSection.appendChild(buttonRgb)
 
 const buttonPen = document.createElement('button')
-buttonPen.textContent = 'Pen'
+buttonPen.textContent = 'Palette'
 buttonPen.classList.add("button-style")
 buttonSection.appendChild(buttonPen)
 
 const buttonClear = document.createElement('button')
-buttonClear.textContent = 'Clear'
+buttonClear.textContent = 'Erase'
 buttonClear.classList.add("button-style")
 buttonSection.appendChild(buttonClear)
 
@@ -175,18 +175,10 @@ buttonClear.addEventListener("click", (event) =>{
 
             child.addEventListener("click", (event) =>{           
 
-                event.target.style.backgroundColor = 'bisque'
+                event.target.style.backgroundColor = 'white'
             
             })
         }); 
     })
 
 })
-
-
-
-       
-
-
-      
-
